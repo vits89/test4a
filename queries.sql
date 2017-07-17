@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS `testDb`;
+
+CREATE DATABASE `testDb`;
+
+USE `testDb`;
+
+CREATE TABLE `users` (
+	`id` TINYINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`full_name` VARCHAR(255),
+	`email` VARCHAR(32) NOT NULL,
+	`phone_number` CHAR(12) NOT NULL
+);
